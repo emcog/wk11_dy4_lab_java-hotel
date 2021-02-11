@@ -21,9 +21,11 @@ public class BedroomTest {
         assertEquals(BedRoomType.SINGLE, bedroom.getBedroomType());
     }
 
-//    @Test
-//    public void roomStartsEmpty(){
-//        assertEquals(0, bedroom.getCapacity());
-//    }
+    @Test
+    public void hasCapacity(){
+        assertEquals(BedRoomType.SINGLE, bedroom.getCapacity());
+    }
+
+
 
 }

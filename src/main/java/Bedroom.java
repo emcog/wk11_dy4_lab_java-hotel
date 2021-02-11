@@ -17,4 +17,10 @@ public class Bedroom {
     public BedRoomType getBedroomType() {
         return this.bedRoomType;
     }
+
+
+    public BedRoomType getCapacity() {
+        return this.bedRoomType;
+    }
+
 }
