@@ -1,7 +1,5 @@
 package rooms;
-
 import people.Guest;
-
 import java.util.ArrayList;
 
 public class ConferenceRoom extends Room {
@@ -19,14 +17,6 @@ public class ConferenceRoom extends Room {
 
     public String getConferenceRoomName() {
         return this.name;
-    }
-
-    public int getGuestCount(){
-        return this.guests.size();
-    }
-
-    public void addGuest(Guest guest){
-        this.guests.add(guest);
     }
 
 

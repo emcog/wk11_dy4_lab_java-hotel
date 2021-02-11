@@ -1,15 +1,15 @@
 package rooms;
 
 //public class rooms.Bedroom extends rooms.Room {
-public class Bedroom {
+public class Bedroom extends Room {
 
     private int roomNumber;
     private BedRoomType bedRoomType;
 
-    public Bedroom(int roomNumber, BedRoomType bedRoomType){
+    public Bedroom(int capacity, int roomNumber, BedRoomType bedRoomType){
+        super(capacity);
         this.roomNumber = roomNumber;
         this.bedRoomType = bedRoomType;
-//        //  TODO super list & overide capacity with enum
     }
 
     public int getRoomNumber(){
@@ -17,11 +17,6 @@ public class Bedroom {
     }
 
     public BedRoomType getBedroomType() {
-        return this.bedRoomType;
-    }
-
-
-    public BedRoomType getCapacity() {
         return this.bedRoomType;
     }
 
