@@ -1,3 +1,9 @@
+package buildings;
+
+import people.Guest;
+import rooms.Bedroom;
+import rooms.ConferenceRoom;
+
 import java.util.ArrayList;
 
 public class Hotel {

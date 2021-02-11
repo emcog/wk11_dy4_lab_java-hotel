@@ -1,3 +1,5 @@
+package rooms;
+
 public enum BedRoomType {
     SINGLE(1),
     DOUBLE(2),

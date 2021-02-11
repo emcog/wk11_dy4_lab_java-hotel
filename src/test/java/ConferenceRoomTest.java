@@ -1,5 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
+import people.Guest;
+import rooms.ConferenceRoom;
 
 import static org.junit.Assert.assertEquals;
 

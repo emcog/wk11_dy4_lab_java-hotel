@@ -1,3 +1,7 @@
+package rooms;
+
+import people.Guest;
+
 import java.util.ArrayList;
 
 public class ConferenceRoom extends Room {

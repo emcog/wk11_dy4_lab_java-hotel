@@ -1,4 +1,6 @@
-//public class Bedroom extends Room {
+package rooms;
+
+//public class rooms.Bedroom extends rooms.Room {
 public class Bedroom {
 
     private int roomNumber;

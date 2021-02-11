@@ -1,5 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
+import rooms.BedRoomType;
+import rooms.Bedroom;
 
 import static org.junit.Assert.assertEquals;
 
