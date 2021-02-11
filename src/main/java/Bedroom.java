@@ -1,18 +1,18 @@
 public class Bedroom {
 
     private int roomNumber;
-    private String bedroomType;
+    private BedRoomType bedRoomType;
 
-    public Bedroom(int roomNumber, String bedroomType){
+    public Bedroom(int roomNumber, BedRoomType bedRoomType){
         this.roomNumber = roomNumber;
-        this.bedroomType = bedroomType;
+        this.bedRoomType = bedRoomType;
     }
 
     public int getRoomNumber(){
         return this.roomNumber;
     }
 
-    public String getBedroomType() {
-        return this.bedroomType;
+    public BedRoomType getBedroomType() {
+        return this.bedRoomType;
     }
 }

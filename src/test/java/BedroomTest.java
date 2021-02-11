@@ -11,7 +11,7 @@ public class BedroomTest {
 
     @Before
     public void before(){
-        bedroom = new Bedroom(01, "single" );
+        bedroom = new Bedroom(01, BedRoomType.SINGLE );
     }
 
     @Test
@@ -21,7 +21,7 @@ public class BedroomTest {
 
     @Test
     public void hasRoomType(){
-        assertEquals("single", bedroom.getBedroomType());
+        assertEquals(BedRoomType.SINGLE, bedroom.getBedroomType());
     }
 
 }
