@@ -6,9 +6,6 @@ import static org.junit.Assert.assertEquals;
 public class BedroomTest {
     Bedroom bedroom;
 
-//    room number
-//    room type
-
     @Before
     public void before(){
         bedroom = new Bedroom(01, BedRoomType.SINGLE );
