@@ -8,6 +8,7 @@ public class HotelTest {
     Hotel hotel;
     Bedroom loveShack;
     ConferenceRoom iggyHall;
+    Guest iggy;
 
     @Before
     public void before(){
@@ -42,6 +43,8 @@ public class HotelTest {
             hotel.addBedroom(loveShack);
             hotel.addBedroom(loveShack);
 
+
+
             assertEquals(6, hotel.getBedroomCount());
     }
 
@@ -63,4 +66,23 @@ public class HotelTest {
         assertEquals(1, hotel.getConferenceRoomCount());
     }
 
+    @Test
+    public void hotelCanCheckGuestIn(){
+        hotel.addGuest(iggy);
+        assertEquals(1, hotel.getGuestCount());
+
+    }
+
+    @Test
+    public void hotelCanCheckGuestOut(){
+        hotel.removeGuest(iggy);
+        hotel.addGuest(iggy);
+        assertEquals(1, hotel.getGuestCount());
+
+    }
+
+    @Test
+    public void hotelCanAssignGuestToRoom(){
+
+    }
 }
