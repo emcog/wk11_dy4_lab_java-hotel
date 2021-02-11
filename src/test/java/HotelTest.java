@@ -11,7 +11,7 @@ public class HotelTest {
 
     @Before
     public void before(){
-        hotel = new Hotel("California", 6);
+        hotel = new Hotel("California", 6, 1);
         loveShack = new Bedroom(1, BedRoomType.TRIPLE);
         iggyHall = new ConferenceRoom("Iggy Hall", 20);
     }
@@ -60,8 +60,7 @@ public class HotelTest {
     public void hotelCanNotExceedSetNumberOfConferenceRooms(){
         hotel.addConferenceRoom(iggyHall);
         hotel.addConferenceRoom(iggyHall);
-        assertEquals(1, hotel.getConferenceRoomCount);
-
+        assertEquals(1, hotel.getConferenceRoomCount());
     }
 
 }
