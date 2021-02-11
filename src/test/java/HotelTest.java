@@ -7,11 +7,13 @@ public class HotelTest {
 
     Hotel hotel;
     Bedroom loveShack;
+    ConferenceRoom iggyHall;
 
     @Before
     public void before(){
         hotel = new Hotel("California", 6);
         loveShack = new Bedroom(1, BedRoomType.TRIPLE);
+        iggyHall = new ConferenceRoom("Iggy Hall", 20);
     }
 
     @Test
@@ -41,6 +43,25 @@ public class HotelTest {
             hotel.addBedroom(loveShack);
 
             assertEquals(6, hotel.getBedroomCount());
+    }
+
+    @Test
+    public void hotelCanHaveConferenceRoom(){
+        assertEquals(1, hotel.getSetNumberOfConferenceRooms());
+    }
+
+    @Test
+    public void hotelCanAddConferenceRoom(){
+        hotel.addConferenceRoom(iggyHall);
+        assertEquals(1, hotel.getConferenceRoomCount());
+    }
+
+    @Test
+    public void hotelCanNotExceedSetNumberOfConferenceRooms(){
+        hotel.addConferenceRoom(iggyHall);
+        hotel.addConferenceRoom(iggyHall);
+        assertEquals(1, hotel.getConferenceRoomCount);
 
     }
+
 }
