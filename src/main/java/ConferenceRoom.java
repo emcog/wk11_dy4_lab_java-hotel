@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class ConferenceRoom extends Room{
+public class ConferenceRoom extends Room {
 
     private String name;
     private ArrayList<Guest> guests;
