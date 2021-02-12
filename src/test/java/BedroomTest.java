@@ -7,6 +7,8 @@ import rooms.Bedroom;
 import static org.junit.Assert.assertEquals;
 
 public class BedroomTest {
+
+    //    instance variables
     Bedroom bedroom;
     Guest guest;
 
